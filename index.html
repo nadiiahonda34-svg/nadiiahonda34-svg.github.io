@@ -23,13 +23,25 @@ html[dir=rtl] .feature{text-align:right}
 @media(max-width:800px){.scenarios{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr}.top-link{display:none}}
 @media(max-width:650px){.wrap{padding:14px 14px 40px}.top{margin-bottom:22px}.card{padding:18px}.scenarios,.steps,.section{margin-top:46px}.footer{flex-direction:column}.hero-proof{gap:8px 14px}}
 
+
+/* Editorial / SEO content */
+.resources{margin:64px auto 0}
+.resource-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.resource-card{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:var(--text);transition:.2s}
+.resource-card:hover{transform:translateY(-2px);border-color:#9bb0ee;box-shadow:0 10px 28px rgba(20,35,70,.07)}
+.resource-card .tag{display:inline-block;font-size:12px;font-weight:800;color:var(--accent);background:var(--soft);padding:5px 8px;border-radius:999px;margin-bottom:10px}
+.resource-card h3{margin:0 0 8px;font-size:19px}
+.resource-card p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
+.resource-card .read{display:inline-block;margin-top:14px;color:var(--accent);font-weight:800;font-size:14px}
+@media(max-width:650px){.resource-grid{grid-template-columns:1fr}}
+
 </style>
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8272791832669756"
      crossorigin="anonymous"></script>
 </head><body>
-<div class="wrap"><div class="top"><a class="brand" href="#top">Briefly ✨</a><div class="top-actions"><a class="top-link" href="#how">How it works</a><a class="top-link" href="#funding">Free</a><select id="uiLanguage" class="language-select" aria-label="Interface language"></select><div id="googleSignIn"></div><div id="googleUser" style="display:none;align-items:center;gap:8px;font-size:13px;font-weight:700"><span id="googleUserName"></span><button type="button" id="googleSignOut" style="border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;cursor:pointer">Sign out</button></div></div></div><div class="hero" id="top"><div class="eyebrow">🇩🇪 Made for life in Germany</div><h1 id="title"></h1><div id="subtitle" class="subtitle"></div><div class="hero-proof"><span>5 free texts per day</span><span>9 languages</span><span>Facts stay unchanged</span></div></div>
+<div class="wrap"><div class="top"><a class="brand" href="#top">Briefly ✨</a><div class="top-actions"><a class="top-link" href="#how">How it works</a><a class="top-link" href="#resources">Guides</a><a class="top-link" href="#funding">Free</a><select id="uiLanguage" class="language-select" aria-label="Interface language"></select><div id="googleSignIn"></div><div id="googleUser" style="display:none;align-items:center;gap:8px;font-size:13px;font-weight:700"><span id="googleUserName"></span><button type="button" id="googleSignOut" style="border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;cursor:pointer">Sign out</button></div></div></div><div class="hero" id="top"><div class="eyebrow">🇩🇪 Made for life in Germany</div><h1 id="title"></h1><div id="subtitle" class="subtitle"></div><div class="hero-proof"><span>5 free texts per day</span><span>9 languages</span><span>Facts stay unchanged</span></div></div>
 <div class="features">
 <div class="feature"><strong id="featureCreateTitle"></strong><span id="featureCreateText"></span></div>
 <div class="feature"><strong id="featureReplyTitle"></strong><span id="featureReplyText"></span></div>
@@ -48,6 +60,21 @@ html[dir=rtl] .feature{text-align:right}
 </div></section>
 <section class="section" id="how"><div class="section-head"><h2>From confusing letter to clear next step</h2><p>Briefly keeps the workflow simple, even when the original message is not.</p></div><div class="steps"><div class="step"><b>01</b><h3>Paste or describe</h3><p>Add the message you received or explain your situation in your own language.</p></div><div class="step"><b>02</b><h3>Understand</h3><p>Get a plain-language explanation without invented dates, amounts or facts.</p></div><div class="step"><b>03</b><h3>Reply</h3><p>Create a concise response in German or another supported language.</p></div></div></section>
 <section class="section" id="trust"><div class="section-head"><h2>Designed for sensitive correspondence</h2></div><div class="trust"><div class="trust-item"><strong>Facts are preserved</strong><span>Names, dates, amounts and details are passed through instead of being silently changed.</span></div><div class="trust-item"><strong>You stay in control</strong><span>Review and edit every result before sending it. Briefly never sends messages for you.</span></div><div class="trust-item"><strong>Clear limits</strong><span>Briefly helps with wording and understanding. It is not a substitute for legal advice.</span></div></div></section>
+
+<section class="section resources" id="resources">
+  <div class="section-head">
+    <h2>Guides for letters and everyday bureaucracy in Germany</h2>
+    <p>Practical information to help you understand common letters, deadlines and formal replies before using the AI assistant.</p>
+  </div>
+  <div class="resource-grid">
+    <a class="resource-card" href="jobcenter-briefe-verstehen.html"><span class="tag">Jobcenter</span><h3>Jobcenter-Briefe verstehen</h3><p>Bescheid, Anhörung, Mitwirkung and Widerspruch: what the terms mean and what to check first.</p><span class="read">Guide öffnen →</span></a>
+    <a class="resource-card" href="vermieter-brief-verstehen.html"><span class="tag">Wohnen</span><h3>Briefe vom Vermieter verstehen</h3><p>Understand common letters about repairs, rent, service charges and other tenancy matters.</p><span class="read">Guide öffnen →</span></a>
+    <a class="resource-card" href="behoerdenbriefe-verstehen.html"><span class="tag">Behörden</span><h3>Behördenbriefe richtig lesen</h3><p>Find the sender, reference number, deadline, requested action and contact details in an official letter.</p><span class="read">Guide öffnen →</span></a>
+    <a class="resource-card" href="formelle-antwort-deutsch.html"><span class="tag">Schreiben</span><h3>Formell auf Deutsch antworten</h3><p>A simple structure for polite, clear replies to authorities, employers, landlords and companies.</p><span class="read">Guide öffnen →</span></a>
+    <a class="resource-card" href="ueber-briefly.html"><span class="tag">Briefly</span><h3>Über Briefly</h3><p>What the service does, how AI-generated text should be reviewed, and where its limits are.</p><span class="read">Mehr erfahren →</span></a>
+  </div>
+</section>
+
 <section class="section" id="funding">
   <div class="section-head">
     <h2 id="fundingTitle">Briefly is free</h2>
@@ -89,9 +116,10 @@ function applyMarket(){
   const m=MARKET[uiLang]||MARKET.en,
         q=s=>document.querySelector(s),
         qa=s=>[...document.querySelectorAll(s)];
-  const nav=qa(".top-link");
-  nav[0].textContent=m.navHow;
-  nav[1].textContent=m.navPrice;
+  const howNav=q('.top-link[href="#how"]');
+  const fundingNav=q('.top-link[href="#funding"]');
+  if(howNav) howNav.textContent=m.navHow;
+  if(fundingNav) fundingNav.textContent=m.navPrice;
   q(".eyebrow").textContent=m.badge;
   qa(".hero-proof span").forEach((x,i)=>x.textContent=m.proof[i]);
   q("#scenarios h2").textContent=m.scTitle;
